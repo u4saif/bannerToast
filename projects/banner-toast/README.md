@@ -2,10 +2,15 @@
 
 It build with Angular and can be consumed in all the Angular projects
 
+### Demo 👉 [Click Here](https://angular-e7kanm.stackblitz.io) 
+[StackBlitz LInk](https://stackblitz.com/edit/angular-e7kanm?file=src%2Fmain.ts)
+
 ## Usage Example: 
 
 # 1) First Install the Package then 
 ```
+import { BannerToastModule, BannerToastService } from 'banner-toast';
+
 @NgModule({
   declarations: [
     AppComponent

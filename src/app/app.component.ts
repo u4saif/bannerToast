@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { BannerToastService } from 'projects/banner-toast/src/lib/banner-toast.service';
-
+import { BannerToastService} from "banner-toast";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

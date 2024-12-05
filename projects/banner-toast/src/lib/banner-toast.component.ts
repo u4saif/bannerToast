@@ -13,7 +13,7 @@ export class BannerToastComponent implements OnInit{
   toastType:string = 'error'
   timeOutID : any ;
   position:string = 'topRight'; //topLeft bottomLeft bottomRight center
-  width:string = "500px"; 
+  width:string = "300px"; 
   textColor:string = "#fff";  
   borderRadius:string = "";  
   backgroundColor:string = "1f1f1f";
