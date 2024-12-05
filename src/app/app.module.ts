@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BannerToastModule } from "../../projects/banner-toast/src/lib/banner-toast.module";
 
 @NgModule({
   declarations: [
@@ -10,8 +11,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    BannerToastModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })

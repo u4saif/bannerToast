@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BannerToastService } from 'projects/banner-toast/src/lib/banner-toast.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'banner';
+
+  constructor(private toastService:BannerToastService ){}
+
+  getToast(type?:string){
+    const toastStyle  = {
+      // borderRadius:"8px",
+      // textColor: '#fff',
+      // position:'bottomRight',
+      iconText:"Error",
+      // backgroundColor: '#1f1f1f'
+    }
+
+    const message = "This is test message from parent. Please checke the detaiils again";
+    this.toastService.newToast( type,message,toastStyle); 
+    console.log("toast clicked")
+  } 
+
 }
