@@ -1,4 +1,5 @@
-# BannerToast [NPM Package Link](https://www.npmjs.com/package/banner-toast)
+# BannerToast 
+### 👉👉 [NPM Package Link](https://www.npmjs.com/package/banner-toast)
 
 It build with Angular and can be consumed in all the Angular projects
 
