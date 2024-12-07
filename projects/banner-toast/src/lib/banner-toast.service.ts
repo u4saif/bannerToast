@@ -6,6 +6,8 @@ import { Subject } from 'rxjs';
 })
 export class BannerToastService {
   public $toastStream = new Subject();
+  private counter = 1;
+
   constructor() {}
 
   newToast(
@@ -13,12 +15,13 @@ export class BannerToastService {
     message?: string,
     toastStyle?: any
   ) {
+    const id = this.counter++;
     this.$toastStream.next({
+      id:id,
       toastType: toastType,
-      message: message,
+      message: message + '' + id,
       toastStyle,
     });
   }
 
-  getNewToast() {}
 }

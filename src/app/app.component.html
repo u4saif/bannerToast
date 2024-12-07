@@ -7,8 +7,8 @@
 
 <button (click)="getToast('error')">Get danger Toast</button>
 <button (click)="getToast('success')">Get suucess Toast</button>
-<button (click)="getToast('warning')">Get new Toast</button>
+<button (click)="getToast('info')">Get new Toast</button>
 
-<banner-toast></banner-toast>
+<banner-toast [position]="'topRight'"></banner-toast>
 
 {{ title }}

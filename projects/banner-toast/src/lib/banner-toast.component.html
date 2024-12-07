@@ -1,20 +1,23 @@
-<div
-  class="parrent"
-  [class]="toastType"
-  [ngClass]="position"
-  [ngStyle]="{
-    width: width,
-    backgroundColor: backgroundColor,
-    color: textColor,
-    borderRadius: borderRadius
-  }"
-  *ngIf="showToast"
->
-  <span class="closebtn" (click)="close()">&times;</span>
-  <strong *ngIf="this.newToasts?.toastStyle?.iconText"
-    >{{ this.newToasts.toastStyle?.iconText }}
-  </strong>
-  <div class="message">
-    {{ this.newToasts?.message }}
-  </div>
+<div class={{position}} [ngClass]="{'toastParent':true}">
+  <ng-container  *ngFor="let toast of toasts">
+    <div
+      [@fade]
+      class="card"
+      [ngClass]="toast?.toastType"
+      [ngStyle]="{
+        width: toast?.toastStyle?.width || '320px',
+        backgroundColor: toast.toastStyle.backgroundColor,
+        color: toast.toastStyle.textColor,
+        borderRadius: toast.toastStyle.borderRadius
+      }"
+    >
+      <span class="closebtn" (click)="removeToast(toast.id)">&times;</span>
+      <strong *ngIf="toast?.toastStyle?.iconText"
+        >{{ toast?.toastStyle?.iconText }}
+      </strong>
+      <div class="message">
+        <p>{{ toast?.message }}</p>
+      </div>
+    </div>
+  </ng-container>
 </div>
