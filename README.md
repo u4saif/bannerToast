@@ -1,5 +1,4 @@
-# BannerToast 
-### 👉👉 [NPM Package Link](https://www.npmjs.com/package/banner-toast)
+# BannerToast
 
 It build with Angular and can be consumed in all the Angular projects
 
@@ -40,11 +39,13 @@ constructor(private toastService:BannerToastService ){}
 
 # 3) And Add this in the App Component html 
 
-## Configuration
-
-### Input Properties
+```html
+<banner-toast [position]="'topRight'"></banner-toast>
+```
 
 <table><thead><tr><th>Property</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>position</code></td><td><code>string</code></td><td><code>topRight</code></td><td>Toast Position on the screen (<code>topLeft</code>, <code>center</code>, <code>bottomRight</code>, <code>bottomLeft</code>).</td></tr></tbody></table>
+
+</hr>
 
 # 4) Consumming the Service to Generate the Toasts 
 
@@ -66,8 +67,8 @@ constructor(private toastService:BannerToastService ){}
       textColor: '#fff',
       position:'bottomRight',
       iconText:"Error",
-      backgroundColor: '#1f1f1f'
-      delay:10000
+      backgroundColor: '#1f1f1f',
+      delay:3000
     }
 
     const message = "Please check the advance sample.";
