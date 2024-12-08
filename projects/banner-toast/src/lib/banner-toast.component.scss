@@ -21,12 +21,16 @@
 .success {
     background-color: #2c9938;
     border: 1px solid #195c21;
+    box-shadow: 0 8px 32px 0 #195c2195;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .info {
     background-color: #019fc3;
     border: 1px solid #05323c;
 }
+
 .warning {
     background-color: #fa9512;
     border: 1px solid #ca7300;

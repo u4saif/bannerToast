@@ -19,7 +19,7 @@ export class BannerToastService {
     this.$toastStream.next({
       id:id,
       toastType: toastType,
-      message: message + '' + id,
+      message: message,
       toastStyle,
     });
   }
