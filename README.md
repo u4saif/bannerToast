@@ -2,8 +2,10 @@
 
 It build with Angular and can be consumed in all the Angular projects
 
-### Demo 👉 [Click Here](https://stackblitzstarters7x7yzjha-tlil--4200--fc837ba8.local-credentialless.webcontainer.io/) 
-[StackBlitz LInk](https://stackblitz.com/edit/stackblitz-starters-7x7yzjha)
+![screenshot](https://raw.githubusercontent.com/u4saif/bannerToast/27980de6ef8e94ad63ab9591befd1c914b21cea3/image.png)
+
+### Demo 👉 [Click Here](https://stackblitz-starters-tk9csuby.stackblitz.io/) 
+[StackBlitz LInk](https://stackblitz.com/edit/stackblitz-starters-tk9csuby?file=src%2Fapp%2Fapp.module.ts,src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.component.html)
 
 ## Usage Example: 
 
