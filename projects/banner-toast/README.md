@@ -2,7 +2,9 @@
 
 ```
 npm install banner-toast@latest
-``` It build with Angular and can be consumed in all the Angular projects
+``` 
+
+It build with Angular and can be consumed in all the Angular projects
 
 ![screenshot](https://raw.githubusercontent.com/u4saif/bannerToast/27980de6ef8e94ad63ab9591befd1c914b21cea3/image.png)
 

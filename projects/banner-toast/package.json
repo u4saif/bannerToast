@@ -1,6 +1,6 @@
 {
   "name": "banner-toast",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0"
@@ -8,5 +8,9 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.",
+  "main": "index.js",
+  "author": "shaikh saifuddin",
+  "license": "ISC"
 }
